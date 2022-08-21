@@ -1,0 +1,410 @@
+:root{
+    --primary: rgb(31, 188, 245);
+    --primary2: rgb(31, 188, 245,0.3);
+    --black: black;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+#navbar {
+    background-color: var(--primary);
+    display: grid;
+    color: white;
+    grid-template-columns: 2fr 9fr;
+    position: fixed;
+    width: 100%;
+    z-index: 5000;
+}
+
+#navbar .icon{
+    width: 200px;
+    height: 100%;
+    
+}
+
+#navbar .menu {
+    display: flex;
+   justify-content: end;
+   align-items: flex-end;
+    
+}
+
+#navbar .menu ul{
+    list-style: none;
+    height: 50px;
+    padding: 0px 10px;
+    display: flex;
+    
+}
+
+#navbar .menu ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 15px;
+    height: auto;
+    font-weight: bold;
+
+    
+}
+
+#navbar .menu ul li:hover{
+   background-color: var(--black);
+   transition: 0.5s all;
+   cursor: pointer;
+    
+}
+
+
+
+
+
+/* seccion de home */
+
+
+#home {
+    display: inline;
+    width: 100%;
+    
+}
+
+#home .backround-home{
+    background-image: url("../../img/background.jpg");
+}
+
+
+
+#home .backround-home .slogan{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+   
+    margin: auto;
+}
+
+#home .backround-home{
+    width: 100%;
+    height: 50vh;
+}
+
+#home .backround-home img{
+    width: 100%;
+    height: 50vh;
+}
+
+
+#home .profile-home{
+   
+    
+    overflow: hidden;
+    position: absolute;
+    top: 30vh;
+    display: flex;
+    margin-left: 50px;
+    justify-content: first baseline;
+    
+}
+
+#home .profile-home img{
+    width: 250px;
+    border-radius: 50%;
+}
+
+
+
+#home .info{
+
+    padding: 50px 30px;
+    display: flex;
+    justify-content: end;
+}
+
+
+
+
+
+/*  seccion de about */
+
+
+#about{
+    display: grid;
+    margin: 50px;
+    margin-top: 100px;
+    grid-template-columns: 1fr 1fr;
+    
+    
+    
+}
+
+#about .info h1{
+
+    color: var(--primary);
+    font-size: xx-large;
+    font-weight: bolder;
+    text-decoration: underline;
+    margin-bottom: 20px;
+   
+
+}
+
+#about .info span{
+
+    color: var(--black);
+
+}
+
+#about .info-about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+
+    flex-direction: column;
+}
+
+
+
+
+#about .img-about img{
+    width:90%;
+}
+
+#about .img-about {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+/* skill */
+
+#skill{
+    background-color: var(--primary);
+    padding: 50px  30px;
+    padding-top: 10px;
+    display: grid;
+   
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+#skill h5{
+    color: white;
+}
+
+
+#skill .skill-item i{
+    font-size: 70px;
+    margin: 10px;
+    padding: 15px;
+    color: white;
+}
+
+
+#skill .skill-item{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+    
+}
+
+
+
+
+#skill .skill-item:hover i{ 
+    border-radius: 50%;
+    margin: 10px;
+    padding: 15px;
+    background-color: white;
+    color:var(--primary);
+    transition: all 0.5s;
+}
+
+
+
+
+/* CONTACT FORM */
+#contact{
+
+    margin: 30px;
+    margin-bottom: 70px;
+    display: grid;
+    grid-template-rows: 20% 80%;
+}
+
+
+#contact .contact-title{
+    display: flex;
+    justify-content: center;
+    
+}
+
+#contact .contact-title h1{
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--primary);
+    text-decoration: underline;
+    
+}
+
+
+#contact .contact-body{
+
+   
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+ 
+#contact .group1{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+
+#contact .group1 .from-group,
+#contact  .from-group
+{
+    margin: 0 15px;
+    
+}
+
+#contact .from-group{
+
+    display: flex;
+    flex-direction: column;
+}
+
+#contact .info-contact ul li{
+
+    list-style: none;
+
+    margin: 15px 0px;
+}
+
+
+#contact .info-contact ul li i{
+
+    color: var(--primary);
+}
+
+
+#contact .info-contact ul {
+
+    color: var(--black);
+    font-weight: 400;
+}
+
+#contact .info-contact ul strong{
+
+    color: var(--primary);
+}
+
+#contact input[type=text],
+#contact textarea
+{
+    background-color: var(--primary2);
+    margin-bottom: 15px;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    
+}
+
+
+#contact input[type=submit]{
+    background-color: var(--primary);
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+   color: white;
+   transition: all 0.5s;
+}
+
+
+#contact input[type=submit]:hover{
+    background-color: var(--primary);
+    border: none;
+    border-radius: 15px;
+    padding: 15px;
+    cursor: pointer;
+   color: white;
+   
+}
+
+
+/* footer */
+
+footer{
+    
+    padding: 15px;
+    color: white;
+    background-color: var(--primary);
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+/* clases publicas */
+
+.p-2{
+    padding: 20px;
+}
+
+
+@media (max-width:600px) {
+    #navbar .icon{
+        display: none;
+        
+    } 
+
+
+    #about{
+        display: grid;
+        margin: 50px;
+        grid-template-columns: 1fr;
+        
+        
+        
+    }
+
+    #skill{
+        background-color: var(--primary);
+        padding: 50px  30px;
+        padding-top: 10px;
+        display: grid;
+        
+        grid-template-columns: 1fr 1fr 1fr ;
+        grid-template-rows: 1fr 1fr ;
+    }
+
+    #contact .contact-body{
+
+   
+        display: grid;
+        grid-template-columns: 1fr ;
+    }
+
+    #home .info h1{
+
+        color: var(--primary);
+        font-size: auto;
+        font-weight: bolder;
+        text-decoration: underline;
+    
+    }
+}
+
