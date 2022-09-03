@@ -17,8 +17,16 @@
     
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     background-color: var(--background-color);
+}
+
+section{
+    padding-top: 100px;
 }
 
 
