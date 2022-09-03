@@ -45,6 +45,20 @@ body{
     
 }
 
+
+.show_menu{
+
+}
+
+
+
+.menu-hamburguer{
+    color: white;
+    margin:auto 1rem;
+    cursor: pointer;
+    display: none;
+}
+
 .menu{
     width: 100%;
     display: flex;
@@ -301,8 +315,44 @@ footer{
 }
 
 
+
+
 @media (max-width:750px){
 
+    .nav{
+        height: 50px;
+    }
+
+    .menu-hamburguer{
+        color: white;
+        margin:auto 1rem;
+        cursor: pointer;
+        display: block;
+    }
+
+    .menu ul{
+        list-style: none;
+        display: block;
+      
+    }
+
+    .menu{
+    width: 100%;
+    
+    position: fixed;
+    background-color: var(--dark-black);
+    justify-content: flex-start;
+    padding-right: 2rem;
+    right: 20;
+    top: 45px;
+    transform: translateX(-200%);
+    transition: transform 0.5s;
+    }
+
+    .show_menu{
+        transform: translateX(0);
+    }
+    
     .container{
         margin: 1rem 1rem;
     }
